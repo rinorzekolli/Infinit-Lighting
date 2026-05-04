@@ -1,117 +1,126 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+import { motion } from "framer-motion";
+import { ShieldCheck, Zap, Cpu } from "lucide-react";
 import Image from "next/image";
 
-const ChevronRight = () => (
-  <svg
-    className="w-5 h-5"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M9 5l7 7-7 7"
-    />
-  </svg>
-);
+const heroFeatures = [
+  {
+    icon: ShieldCheck,
+    title: "Siguri Maksimale",
+    description: "Ndriçim i besueshëm për çdo situatë.",
+  },
+  {
+    icon: Zap,
+    title: "Efiçiencë Energjetike",
+    description: "Kursim energjie deri në 70%.",
+  },
+  {
+    icon: Cpu,
+    title: "Teknologji e Avancuar",
+    description: "Sisteme smart dhe të qëndrueshme.",
+  },
+];
 
-export default function Hero() {
+export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-start pt-32 pb-20 px-6 md:px-12 lg:px-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-bg.jpg"
-          alt="Street Lighting"
+          src="/images/Hero-section-bg-image.png"
+          alt="Highway with LED street lighting at night"
           fill
           className="object-cover"
           priority
-          quality={90}
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-background)] via-[var(--color-background)]/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-background/20 via-background/40 to-background/20" />
+        <div className="absolute inset-0 bg-background/10" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-12 w-full items-center">
-        {/* Left - Main Content */}
-        <div className="lg:col-span-2 space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
-            <span className="block text-[var(--color-foreground)]">
-              NDRIÇIMI QË
-            </span>
-            <span className="block text-[var(--color-foreground)]">
-              KRIJON SIGURI.
-            </span>
-            <span className="block text-[var(--color-lime)] mt-4">
-              TEKNOLOGJIA QË
-            </span>
-            <span className="block text-[var(--color-lime)]">
-              DREJTON TË ARDHMEN.
-            </span>
-          </h1>
-
-          <p className="text-lg text-[var(--color-gray-text)] max-w-lg leading-relaxed">
-            Zgjidhe profesionale të ndriçimit LED për rrugë, autostrada, zona
-            urbane dhe hapësira publike.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 pt-4">
-            <Link href="#products">
-              <button className="group px-8 py-4 bg-[var(--color-lime)] text-[var(--color-background)] font-bold rounded-lg hover:bg-[var(--color-foreground)] transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg hover:shadow-[0_0_30px_rgba(192,249,74,0.4)]">
-                ZBULO PRODUKTET
-                <ChevronRight />
-              </button>
-            </Link>
-            <Link href="#projects">
-              <button className="px-8 py-4 border-2 border-[var(--color-lime)] text-[var(--color-lime)] font-bold rounded-lg hover:bg-[var(--color-lime)] hover:text-[var(--color-background)] transition-all duration-300 flex items-center gap-2">
-                SHIKO PROJEKTET
-                <ChevronRight />
-              </button>
-            </Link>
-          </div>
-        </div>
-
-        {/* Right - Feature Cards */}
-        <div className="hidden lg:flex flex-col space-y-6">
-          {[
-            {
-              icon: "🛡️",
-              title: "SIGURI MAKSIMALE",
-              desc: "Ndriç i besueshëm për çdo situatë",
-            },
-            {
-              icon: "⚡",
-              title: "EFIÇIENCE ENERGJETIKE",
-              desc: "Kurnim energjie deri në 70%",
-            },
-            {
-              icon: "🔧",
-              title: "TEKNOLOGJI E AVANCUAR",
-              desc: "Sisteme smart dhe të qëndrueshme",
-            },
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className="flex items-start gap-4 p-4 rounded-lg border border-[var(--color-dark-border)] bg-[var(--color-dark-card)]/50 backdrop-blur hover:border-[var(--color-lime)] hover:shadow-[0_0_20px_rgba(192,249,74,0.2)] transition-all duration-300 animate-slide-in-right"
-              style={{ animationDelay: `${idx * 0.2}s` }}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-24 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          {/* Left Content */}
+          <div className="lg:col-span-7">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="text-3xl flex-shrink-0">{item.icon}</div>
-              <div>
-                <p className="font-bold text-sm text-[var(--color-lime)]">
-                  {item.title}
-                </p>
-                <p className="text-xs text-[var(--color-gray-text)] mt-1">
-                  {item.desc}
-                </p>
-              </div>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-none tracking-tight">
+                NDRIÇIMI QË
+                <br />
+                KRIJON SIGURI.
+              </h1>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-none tracking-tight text-lime mt-3">
+                TEKNOLOGJIA QË
+                <br />
+                DREJTON TË ARDHMEN.
+              </h1>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-8 max-w-2xl text-lg sm:text-xl text-gray-text leading-relaxed font-medium"
+            >
+              Zgjidhje profesionale të ndriçimit LED për rrugë, autostrada, zona
+              urbane dhe hapësira publike.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="mt-12 flex flex-wrap gap-6"
+            >
+              <a
+                href="/produktet"
+                className="inline-flex items-center justify-center rounded-full bg-lime px-10 py-4 text-sm font-bold text-background transition-all hover:bg-lime-dark hover:shadow-[0_0_32px_rgba(192,249,74,0.4)]"
+              >
+                ZBULO PRODUKTET
+              </a>
+              <a
+                href="/projektet"
+                className="inline-flex items-center justify-center rounded-full border border-lime/50 px-10 py-4 text-sm font-bold text-lime transition-all hover:bg-lime/10 hover:border-lime"
+              >
+                SHIKO PROJEKTET
+              </a>
+            </motion.div>
+          </div>
+
+          {/* Right Features */}
+          <div className="lg:col-span-5">
+            <div className="flex flex-col gap-4">
+              {heroFeatures.map((feature, index) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.15 }}
+                  className="flex items-start gap-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md p-5 transition-all hover:border-lime/30 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(192,249,74,0.08)]"
+                >
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-lime/15">
+                    <feature.icon
+                      className="h-5 w-5 text-lime"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-white">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-text leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
