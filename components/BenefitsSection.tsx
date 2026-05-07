@@ -2,22 +2,57 @@
 
 import { motion } from "framer-motion";
 import { Zap, Shield, Cpu, Wrench } from "lucide-react";
-import { benefits } from "@/data/benefits";
 
-const iconMap: Record<string, React.ElementType> = {
-  Zap,
-  Shield,
-  Cpu,
-  Wrench,
-};
+const benefits = [
+  {
+    id: 1,
+    icon: Zap,
+    title: "EFIKASITET I LARTË",
+    description: "LED me efiçiencë të lartë ndriçimi dhe konsum minimal energjie.",
+  },
+  {
+    id: 2,
+    icon: Shield,
+    title: "QËNDRUESHMËRI",
+    description: "Materiale cilësore dhe rezistente ndaj kushteve ekstreme.",
+  },
+  {
+    id: 3,
+    icon: Cpu,
+    title: "SISTEME SMART",
+    description: "Kontroll i largët, sensorë dhe menaxhim inteligjent.",
+  },
+  {
+    id: 4,
+    icon: Wrench,
+    title: "INSTALIM I LEHTË",
+    description: "Dizajn i projektuar për montim të shpejtë dhe mirëmbajtje minimale.",
+  },
+];
 
 export default function BenefitsSection() {
   return (
-    <section className="py-16 lg:py-24 border-t border-dark-border">
+    <section className="py-16 lg:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center justify-center gap-4 mb-14"
+        >
+          <div className="h-px flex-1 bg-white/20" />
+          <span className="text-xs font-bold tracking-widest text-white/60 uppercase whitespace-nowrap">
+            ZHVILLUAR PËR PERFORMANCË
+          </span>
+          <div className="h-px flex-1 bg-white/20" />
+        </motion.div>
+
+        {/* Benefits Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {benefits.map((benefit, index) => {
-            const Icon = iconMap[benefit.icon] || Zap;
+            const Icon = benefit.icon;
             return (
               <motion.div
                 key={benefit.id}
@@ -25,15 +60,18 @@ export default function BenefitsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group rounded-xl border border-white/10 bg-white/5 p-6 transition-all hover:border-lime/30 hover:bg-white/10"
+                className="text-center"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lime/10 transition-all group-hover:bg-lime/20 group-hover:shadow-[0_0_20px_rgba(192,249,74,0.15)]">
-                  <Icon className="h-5 w-5 text-lime" strokeWidth={1.5} />
+                <div className="flex justify-center mb-5">
+                  <Icon
+                    className="h-10 w-10 text-lime"
+                    strokeWidth={1}
+                  />
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-white">
+                <h3 className="text-sm font-bold text-white tracking-wide mb-3">
                   {benefit.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-text leading-relaxed">
+                <p className="text-sm text-white/50 leading-relaxed">
                   {benefit.description}
                 </p>
               </motion.div>

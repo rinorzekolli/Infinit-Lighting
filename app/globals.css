@@ -44,3 +44,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-lime);
 }
+
+/* Custom gradients */
+@supports (background: linear-gradient(45deg, var(--color-lime), var(--color-dark-card))) {
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--color-lime), transparent);
+  }
+}
