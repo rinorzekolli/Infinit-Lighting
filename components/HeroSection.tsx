@@ -24,37 +24,36 @@ const heroFeatures = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
-      {/* Background Image */}
+    <section className="relative min-h-[760px] lg:min-h-[820px] flex items-center overflow-hidden bg-[#050912]">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/Hero-section-bg-image.png"
           alt="Highway with LED street lighting at night"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#03060b]/95 via-[#03060b]/58 to-[#03060b]/36" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#03060b]/55 via-transparent to-[#070b12]" />
+        <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-b from-transparent via-[#070b12]/75 to-[#070b12]" />
+        <div className="absolute -left-32 top-20 h-[520px] w-[520px] rounded-full bg-lime/10 blur-[130px]" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 w-full">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-14 pt-32 pb-36">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Content */}
           <div className="lg:col-span-7">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-white">
+              <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-black leading-[1.08] tracking-tight text-white drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]">
                 NDRIÇIMI QË
                 <br />
                 KRIJON SIGURI.
               </h1>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-lime italic mt-2">
+              <h2 className="mt-2 text-4xl sm:text-5xl lg:text-[60px] font-black leading-[1.08] tracking-tight text-lime drop-shadow-[0_0_22px_rgba(164,196,45,0.16)]">
                 TEKNOLOGJIA QË
                 <br />
                 DREJTON TË ARDHMEN.
@@ -65,7 +64,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-8 max-w-lg text-base text-white/70 leading-relaxed"
+              className="mt-8 max-w-[560px] text-base lg:text-lg text-white/78 leading-relaxed"
             >
               Zgjidhje profesionale të ndriçimit LED për rrugë, autostrada, zona
               urbane dhe hapësira publike.
@@ -75,18 +74,18 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-10 flex flex-wrap gap-4"
+              className="mt-10 flex flex-wrap gap-5"
             >
               <a
                 href="/produktet"
-                className="inline-flex items-center gap-2 rounded bg-lime px-6 py-3 text-sm font-bold text-background transition-all duration-300 hover:bg-lime-dark"
+                className="inline-flex items-center gap-2 bg-lime px-7 py-4 text-sm font-black text-[#07100d] shadow-[0_0_28px_rgba(164,196,45,0.22)] transition-all duration-300 hover:bg-lime-dark hover:translate-y-[-1px]"
               >
                 ZBULO PRODUKTET
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="/projektet"
-                className="inline-flex items-center gap-2 rounded border border-white/30 px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white/10 hover:border-white/50"
+                className="inline-flex items-center gap-2 border border-white/45 bg-black/15 px-7 py-4 text-sm font-black text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-lime/60"
               >
                 SHIKO PROJEKTET
                 <ArrowRight className="h-4 w-4" />
@@ -94,28 +93,25 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right Features */}
-          <div className="lg:col-span-5">
-            <div className="flex flex-col gap-6">
+          <div className="lg:col-span-5 lg:pl-10">
+            <div className="relative flex flex-col gap-8 border-l border-lime/70 pl-8">
+              <div className="absolute -left-px top-0 h-full w-px bg-gradient-to-b from-transparent via-lime to-transparent shadow-[0_0_24px_rgba(164,196,45,0.45)]" />
               {heroFeatures.map((feature, index) => (
                 <motion.div
                   key={feature.title}
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.15 }}
-                  className="flex items-start gap-4"
+                  className="flex items-start gap-5"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-lime/30 bg-lime/10">
-                    <feature.icon
-                      className="h-5 w-5 text-lime"
-                      strokeWidth={1.5}
-                    />
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center text-white">
+                    <feature.icon className="h-8 w-8" strokeWidth={1.15} />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-white tracking-wide">
+                    <h3 className="text-sm font-black text-white tracking-wide">
                       {feature.title}
                     </h3>
-                    <p className="mt-1 text-sm text-white/60">
+                    <p className="mt-2 text-sm text-white/68 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
