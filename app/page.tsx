@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-(--color-background) text-(--color-foreground) overflow-hidden">
+    <main className="w-full text-(--color-foreground) overflow-hidden">
       <Header />
       <HeroSection />
 
