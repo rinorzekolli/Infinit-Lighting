@@ -1,119 +1,96 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, Zap, Cpu } from "lucide-react";
-import Image from "next/image";
+import { ShieldCheck, Zap, Cpu, ArrowRight } from "lucide-react";
 
 const heroFeatures = [
   {
     icon: ShieldCheck,
-    title: "Siguri Maksimale",
+    title: "SIGURI MAKSIMALE",
     description: "Ndriçim i besueshëm për çdo situatë.",
   },
   {
     icon: Zap,
-    title: "Efiçiencë Energjetike",
+    title: "EFIÇIENCË ENERGJETIKE",
     description: "Kursim energjie deri në 70%.",
   },
   {
     icon: Cpu,
-    title: "Teknologji e Avancuar",
+    title: "TEKNOLOGJI E AVANCUAR",
     description: "Sisteme smart dhe të qëndrueshme.",
   },
 ];
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/Hero-section-bg-image.png"
-          alt="Highway with LED street lighting at night"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-linear-to-r from-background/20 via-background/40 to-background/20" />
-        <div className="absolute inset-0 bg-background/10" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-24 w-full">
+    <section className="relative min-h-172.5 lg:min-h-181.25 flex items-center overflow-hidden bg-transparent">
+      <div className="relative z-10 mx-auto w-full max-w-310 px-5 sm:px-7 lg:px-10 pt-28 pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Content */}
           <div className="lg:col-span-7">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.55 }}
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-none tracking-tight">
+              <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-black leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)]">
                 NDRIÇIMI QË
                 <br />
                 KRIJON SIGURI.
               </h1>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-none tracking-tight text-lime mt-3">
+              <h2 className="mt-2 text-[32px] sm:text-[43px] lg:text-[47px] font-black leading-[1.12] tracking-[-0.02em] text-lime drop-shadow-[0_0_20px_rgba(164,196,45,0.18)]">
                 TEKNOLOGJIA QË
                 <br />
                 DREJTON TË ARDHMEN.
-              </h1>
+              </h2>
             </motion.div>
-
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-8 max-w-2xl text-lg sm:text-xl text-gray-text leading-relaxed font-medium"
+              transition={{ duration: 0.55, delay: 0.18 }}
+              className="mt-7 max-w-138.75 text-[15px] lg:text-[16px] text-white/82 leading-[1.8] drop-shadow-[0_4px_16px_rgba(0,0,0,0.65)]"
             >
               Zgjidhje profesionale të ndriçimit LED për rrugë, autostrada, zona
               urbane dhe hapësira publike.
             </motion.p>
-
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-12 flex flex-wrap gap-6"
+              transition={{ duration: 0.55, delay: 0.32 }}
+              className="mt-9 flex flex-wrap gap-5"
             >
               <a
                 href="/produktet"
-                className="inline-flex items-center justify-center rounded-full bg-lime px-10 py-4 text-sm font-bold text-background transition-all hover:bg-lime-dark hover:shadow-[0_0_32px_rgba(192,249,74,0.4)]"
+                className="inline-flex items-center gap-2 bg-lime px-6 py-3.5 text-[12px] font-black text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
               >
-                ZBULO PRODUKTET
+                ZBULO PRODUKTET <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="/projektet"
-                className="inline-flex items-center justify-center rounded-full border border-lime/50 px-10 py-4 text-sm font-bold text-lime transition-all hover:bg-lime/10 hover:border-lime"
+                className="inline-flex items-center gap-2 border border-white/45 bg-black/20 px-6 py-3.5 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-white/10 hover:border-lime/60"
               >
-                SHIKO PROJEKTET
+                SHIKO PROJEKTET <ArrowRight className="h-4 w-4" />
               </a>
             </motion.div>
           </div>
-
-          {/* Right Features */}
-          <div className="lg:col-span-5">
-            <div className="flex flex-col gap-4">
+          <div className="lg:col-span-5 lg:pl-12">
+            <div className="relative flex flex-col gap-9 border-l border-lime/70 pl-8">
+              <div className="absolute -left-px top-0 h-full w-px bg-linear-to-b from-transparent via-lime to-transparent" />
               {heroFeatures.map((feature, index) => (
                 <motion.div
                   key={feature.title}
-                  initial={{ opacity: 0, x: 30 }}
+                  initial={{ opacity: 0, x: 24 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 + index * 0.15 }}
-                  className="flex items-start gap-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md p-5 transition-all hover:border-lime/30 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(192,249,74,0.08)]"
+                  transition={{ duration: 0.45, delay: 0.28 + index * 0.12 }}
+                  className="flex items-start gap-5"
                 >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-lime/15">
-                    <feature.icon
-                      className="h-5 w-5 text-lime"
-                      strokeWidth={1.5}
-                    />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)]">
+                    <feature.icon className="h-8 w-8" strokeWidth={1.1} />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-white">
+                    <h3 className="text-[12px] font-black text-white tracking-[0.04em] drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)]">
                       {feature.title}
                     </h3>
-                    <p className="mt-2 text-sm text-gray-text leading-relaxed">
+                    <p className="mt-2 text-[12px] text-white/72 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>

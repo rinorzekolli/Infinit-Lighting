@@ -1,39 +1,65 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { stats } from "@/data/stats";
+
+const stats = [
+  {
+    id: 1,
+    value: "500+",
+    label: "PROJEKTE TË REALIZUARA",
+    sublabel: "në Kosovë dhe rajon",
+  },
+  {
+    id: 2,
+    value: "1M+",
+    label: "METRA RRUGË TË NDRIÇUARA",
+    sublabel: "me teknologji LED",
+  },
+  {
+    id: 3,
+    value: "70%",
+    label: "KURSIM ENERGJIE",
+    sublabel: "krahasuar me ndriçimin tradicional",
+  },
+  {
+    id: 4,
+    value: "10+",
+    label: "VITE PËRVOJË",
+    sublabel: "në ndriçim profesional",
+  },
+];
 
 export default function StatisticsSection() {
   return (
-    <section className="py-16 lg:py-20 border-t border-dark-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="rounded-2xl border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-14"
-        >
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+    <section className="relative bg-transparent pb-12 pt-0 lg:pb-14">
+      <div className="mx-auto max-w-285 px-5 sm:px-7 lg:px-10">
+        <div className="relative overflow-hidden border border-white/14 bg-black/26 shadow-[0_24px_68px_rgba(0,0,0,0.42)] backdrop-blur-[1px]">
+          <div className="relative grid grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.id}
-                initial={{ opacity: 0, y: 15 }}
+                initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="text-center"
+                transition={{ duration: 0.35, delay: index * 0.08 }}
+                className="relative px-4 py-8 text-center lg:py-9"
               >
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-black text-lime">
+                {index !== 0 && (
+                  <div className="absolute left-0 top-1/2 hidden h-20 w-px -translate-y-1/2 bg-white/14 lg:block" />
+                )}
+                <div className="text-[36px] sm:text-[44px] lg:text-[42px] font-black text-lime">
                   {stat.value}
                 </div>
-                <p className="mt-3 text-sm text-gray-text leading-relaxed font-medium">
+                <p className="mt-3 text-[11px] font-black text-white tracking-[0.04em] uppercase">
                   {stat.label}
+                </p>
+                <p className="mt-2 text-[12px] text-white/55">
+                  {stat.sublabel}
                 </p>
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -3,78 +3,93 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { projects } from "@/data/projects";
+
+const projects = [
+  {
+    id: 1,
+    title: "AUTOSTRADA PRISHTINË – FERIZAJ",
+    description: "Ndriçim LED i autostradës",
+    image: "/images/road-01.png",
+  },
+  {
+    id: 2,
+    title: 'RUGA "AGIM RAMADANI", PRISHTINË',
+    description: "Ndriçim urban LED",
+    image: "/images/road-02.png",
+  },
+  {
+    id: 3,
+    title: 'BOULEVARDI "BILL KLINTON", PRISHTINË',
+    description: "Ndriçim urban inteligjent",
+    image: "/images/road-03.png",
+  },
+  {
+    id: 4,
+    title: "RUGA PRIZREN – SUHAREKË",
+    description: "Ndriçim rrugor LED",
+    image: "/images/road-04.png",
+  },
+];
 
 export default function ProjectsSection() {
   return (
-    <section className="py-16 lg:py-24 border-t border-dark-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
+    <section className="relative bg-transparent py-12 lg:py-14">
+      <div className="relative mx-auto max-w-285 px-5 sm:px-7 lg:px-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-12"
+          transition={{ duration: 0.45 }}
+          className="flex items-center gap-3 mb-9"
         >
-          <span className="text-xs font-black tracking-widest text-lime uppercase">
-            PORTFOLIO
-          </span>
-          <h2 className="mt-2 text-4xl sm:text-5xl font-black">
+          <h2 className="text-[15px] font-black tracking-[0.06em] text-lime uppercase">
             PROJEKTET TONA
           </h2>
+          <div className="h-px w-12 bg-lime/55" />
         </motion.div>
-
-        {/* Project Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group rounded-xl border border-white/10 bg-white/5 overflow-hidden transition-all hover:border-lime/30 hover:shadow-[0_0_30px_rgba(192,249,74,0.08)]"
+              transition={{ duration: 0.45, delay: index * 0.08 }}
+              className="group cursor-pointer"
             >
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-39.5 overflow-hidden border border-white/8 bg-black/35 shadow-[0_18px_34px_rgba(0,0,0,0.34)]">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-dark-card/80 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#050912]/70 via-transparent to-transparent opacity-75" />
               </div>
-
-              {/* Content */}
-              <div className="p-5">
-                <h3 className="text-sm font-semibold text-white leading-snug">
+              <div className="border-x border-b border-white/8 bg-black/34 px-4 py-4 backdrop-blur-[1px]">
+                <h3 className="text-[11px] font-black text-white leading-snug tracking-[0.035em]">
                   {project.title}
                 </h3>
-                <p className="mt-1.5 text-xs text-gray-text">
+                <p className="mt-2 text-[12px] text-white/58">
                   {project.description}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
-
-        {/* CTA Button */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.35, delay: 0.25 }}
           className="mt-10 flex justify-center"
         >
           <a
             href="/projektet"
-            className="inline-flex items-center gap-2 rounded-full border border-lime/50 px-8 py-3.5 text-sm font-bold text-lime transition-all hover:bg-lime/10 hover:border-lime"
+            className="inline-flex items-center gap-2 border border-lime/65 bg-black/22 px-7 py-3 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
           >
-            SHIKO TË GJITHA PROJEKTET
-            <ArrowRight className="h-4 w-4" />
+            SHIKO TË GJITHA PROJEKTET <ArrowRight className="h-4 w-4" />
           </a>
         </motion.div>
       </div>

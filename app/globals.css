@@ -18,7 +18,6 @@
 }
 
 body {
-  background: var(--color-background);
   color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,4 +42,44 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-lime);
+}
+
+/* BACKGROUND IMAGE */
+@supports (background-image: url('/images/full-page-bg.png')) {
+  body {
+    background-image: url('/images/full-page-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+::selection {
+  background: var(--color-lime);
+  color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lime);
+}
+
+/* Custom gradients */
+@supports (background: linear-gradient(45deg, var(--color-lime), var(--color-dark-card))) {
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--color-lime), transparent);
+  }
 }

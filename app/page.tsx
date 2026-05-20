@@ -11,6 +11,7 @@ export default function Home() {
     <main className="bg-(--color-background) text-(--color-foreground) overflow-hidden">
       <Header />
       <HeroSection />
+
       <ProductHighlight />
       <BenefitsSection />
       <ProjectsSection />
