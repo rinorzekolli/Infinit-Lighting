@@ -23,23 +23,15 @@ export default function Header() {
       <div className="mx-auto max-w-310 px-5 sm:px-7 lg:px-10">
         <div className="flex h-19.5 items-center justify-between lg:h-22">
           <Link href="/" className="flex items-center gap-3 shrink-0">
-            {/* <Image
-              src="/images/Infinit-logo-white.png"
+            <Image
+              src="/images/Infinit-logo-white-enhanced.png"
               alt="Infinit Lighting Logo"
-              width={52}
-              height={52}
+              width={72}
+              height={72}
               className="shrink-0"
               loading="eager"
-              style={{ width: "auto", height: "52px" }}
-            /> */}
-            <div className="flex flex-col leading-none">
-              <span className="text-[14px] font-light tracking-[0.34em] text-white">
-                INFINIT
-              </span>
-              <span className="mt-1 text-[10px] font-light tracking-[0.32em] text-lime">
-                LIGHTING
-              </span>
-            </div>
+              style={{ width: "auto", height: "102px" }}
+            />
           </Link>
           <nav className="hidden lg:flex items-center gap-7">
             {navLinks.map((link, index) => (
