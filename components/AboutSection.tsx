@@ -72,9 +72,9 @@ export default function AboutSection() {
             transition={{ duration: 0.45, delay: 0.2 }}
             className="text-center text-white/60 max-w-2xl mx-auto text-lg"
           >
-            Infinit Lighting është e përkushtuar në sigurimin e zgjidhjeve inovatsh
-            dhe të qëndrueshme për ndriçimin e ardhmes. Misioni ynë është të
-            transformojmë mënyrën se si botëra sheh ndriçimin.
+            Infinit Lighting është e përkushtuar në sigurimin e zgjidhjeve
+            inovatsh dhe të qëndrueshme për ndriçimin e ardhmes. Misioni ynë
+            është të transformojmë mënyrën se si botëra sheh ndriçimin.
           </motion.p>
         </div>
 
@@ -92,7 +92,9 @@ export default function AboutSection() {
               >
                 <div className="flex items-center gap-4 mb-4">
                   <Icon className="w-8 h-8 text-lime flex-shrink-0" />
-                  <h3 className="text-lg font-bold text-white">{point.title}</h3>
+                  <h3 className="text-lg font-bold text-white">
+                    {point.title}
+                  </h3>
                 </div>
                 <p className="text-sm text-white/60">{point.description}</p>
               </motion.div>
@@ -114,7 +116,9 @@ export default function AboutSection() {
           <div className="flex justify-center gap-8 flex-wrap">
             <div className="text-center">
               <div className="text-3xl font-bold text-lime mb-1">500+</div>
-              <div className="text-sm text-white/60">Projektet e Përfunduara</div>
+              <div className="text-sm text-white/60">
+                Projektet e Përfunduara
+              </div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-lime mb-1">50+</div>

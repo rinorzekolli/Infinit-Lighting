@@ -101,7 +101,9 @@ export default function ProductsSection() {
               <h3 className="text-lg font-bold text-white mb-2">
                 {product.name}
               </h3>
-              <p className="text-sm text-white/60 mb-4">{product.description}</p>
+              <p className="text-sm text-white/60 mb-4">
+                {product.description}
+              </p>
 
               <div className="mb-6 pb-6 border-b border-white/10">
                 <ul className="space-y-2">

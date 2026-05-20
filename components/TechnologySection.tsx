@@ -1,14 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Cpu,
-  Zap,
-  Shield,
-  Cloud,
-  Smartphone,
-  Settings,
-} from "lucide-react";
+import { Cpu, Zap, Shield, Cloud, Smartphone, Settings } from "lucide-react";
 
 const technologies = [
   {
@@ -36,22 +29,19 @@ const technologies = [
     id: 4,
     icon: Shield,
     title: "SIGURËSI MAKSIMALE",
-    description:
-      "Enkriptim end-to-end dhe protokolle sigurie të certifikuara",
+    description: "Enkriptim end-to-end dhe protokolle sigurie të certifikuara",
   },
   {
     id: 5,
     icon: Zap,
     title: "ENERGY EFFICIENT",
-    description:
-      "Teknologji që zvogëlon konsumin energjitik deri në 60%",
+    description: "Teknologji që zvogëlon konsumin energjitik deri në 60%",
   },
   {
     id: 6,
     icon: Settings,
     title: "CUSTOMIZABLE",
-    description:
-      "Përshtatje plotë sipas kërkesave specifike të projektit tuaj",
+    description: "Përshtatje plotë sipas kërkesave specifike të projektit tuaj",
   },
 ];
 
