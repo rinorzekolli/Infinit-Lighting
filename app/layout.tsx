@@ -44,7 +44,7 @@ export default function RootLayout({
       lang="sq"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="w-full min-h-full flex flex-col text-foreground">
+      <body className="w-full min-h-full flex flex-col text-foreground" suppressHydrationWarning>
         {children}
       </body>
     </html>

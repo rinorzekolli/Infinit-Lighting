@@ -50,7 +50,7 @@ export default function ProductHighlight() {
                 src="/images/led-street-light-product.png"
                 alt="LED Street Light Product"
                 fill
-                className="object-contain object-[75%_50%] scale-180 drop-shadow-[0_0px_80px_rgba(255,255,255,4)] drop-shadow-[0_30px_60px_rgba(255,255,255,4)]"
+                className="object-contain object-[75%_50%] scale-180 drop-shadow-[0_30px_60px_rgba(255,255,255,4)]"
                 sizes="(max-width: 1024px) 100vw, 108vw"
               />
             </motion.div>
