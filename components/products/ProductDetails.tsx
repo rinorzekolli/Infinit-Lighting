@@ -21,14 +21,14 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
             >
               {/* Category */}
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-[12px] font-black tracking-[0.08em] text-lime uppercase">
+                <span className="text-[12px] font-semibold tracking-[0.08em] text-lime uppercase">
                   {product.category}
                 </span>
                 <div className="h-px flex-1 bg-lime/30" />
               </div>
 
               {/* Title */}
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[44px] font-black leading-[1.15] text-white mb-6">
+              <h1 className="text-[32px] sm:text-[40px] lg:text-[44px] font-light leading-[1.15] text-white mb-6">
                 {product.title}
               </h1>
 
@@ -39,13 +39,13 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
 
               {/* Key Features Section */}
               <div className="mb-10">
-                <h2 className="text-[16px] font-black text-white mb-4">
+                <h2 className="text-[16px] font-semibold text-white mb-4\">
                   Karakteristikat kryesore:
                 </h2>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {product.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <span className="text-lime font-black text-[14px] mt-1">
+                      <span className="text-lime font-semibold text-[14px] mt-1">
                         ✓
                       </span>
                       <span className="text-[14px] text-white/70">
@@ -59,7 +59,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
               {/* Applications Section */}
               {product.applications.length > 0 && (
                 <div className="mb-10">
-                  <h2 className="text-[16px] font-black text-white mb-4">
+                  <h2 className="text-[16px] font-semibold text-white mb-4">
                     Aplikimet:
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -85,14 +85,14 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
             className="lg:col-span-1"
           >
             <div className="border border-white/12 bg-[#080d15]/60 p-6 lg:p-7">
-              <h2 className="text-[14px] font-black text-white mb-6 uppercase tracking-[0.06em]">
+              <h2 className="text-[14px] font-semibold text-white mb-6 uppercase tracking-[0.06em]">
                 Specifika teknik
               </h2>
 
               <div className="space-y-4">
                 {product.specifications.map((spec, idx) => (
                   <div key={idx} className="border-b border-white/10 pb-4">
-                    <p className="text-[11px] font-black text-lime uppercase tracking-[0.06em] mb-1">
+                    <p className="text-[11px] font-semibold text-lime uppercase tracking-[0.06em] mb-1">
                       {spec.label}
                     </p>
                     <p className="text-[14px] text-white/80">{spec.value}</p>
@@ -103,7 +103,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
               {/* CTA Button */}
               <a
                 href="/kontakti"
-                className="mt-8 w-full inline-flex items-center justify-center bg-lime px-6 py-4 text-[12px] font-black text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
+                className="mt-8 w-full inline-flex items-center justify-center bg-lime px-6 py-4 text-[12px] font-semibold text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
               >
                 KËRKO OFERTË
               </a>

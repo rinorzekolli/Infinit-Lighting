@@ -18,7 +18,7 @@ export default function ContactInfoSection() {
             className="border border-white/12 bg-[#080d15]/60 p-7 hover:border-lime/50 transition-all duration-300"
           >
             <MapPin className="h-8 w-8 text-lime mb-4" />
-            <h3 className="text-[14px] font-black text-white mb-3 uppercase tracking-[0.06em]">
+            <h3 className="text-[14px] font-semibold text-white mb-3 uppercase tracking-[0.06em]">
               Adresa
             </h3>
             <p className="text-[13px] text-white/70 leading-[1.6]">
@@ -35,7 +35,7 @@ export default function ContactInfoSection() {
             className="border border-white/12 bg-[#080d15]/60 p-7 hover:border-lime/50 transition-all duration-300"
           >
             <Phone className="h-8 w-8 text-lime mb-4" />
-            <h3 className="text-[14px] font-black text-white mb-3 uppercase tracking-[0.06em]">
+            <h3 className="text-[14px] font-semibold text-white mb-3 uppercase tracking-[0.06em]">
               Telefoni
             </h3>
             <p className="text-[13px] text-white/70 leading-[1.6]">
@@ -57,7 +57,7 @@ export default function ContactInfoSection() {
             className="border border-white/12 bg-[#080d15]/60 p-7 hover:border-lime/50 transition-all duration-300"
           >
             <Mail className="h-8 w-8 text-lime mb-4" />
-            <h3 className="text-[14px] font-black text-white mb-3 uppercase tracking-[0.06em]">
+            <h3 className="text-[14px] font-semibold text-white mb-3 uppercase tracking-[0.06em]">
               Email
             </h3>
             <p className="text-[13px] text-white/70 leading-[1.6]">
@@ -79,7 +79,7 @@ export default function ContactInfoSection() {
             className="border border-white/12 bg-[#080d15]/60 p-7 hover:border-lime/50 transition-all duration-300"
           >
             <Clock className="h-8 w-8 text-lime mb-4" />
-            <h3 className="text-[14px] font-black text-white mb-3 uppercase tracking-[0.06em]">
+            <h3 className="text-[14px] font-semibold text-white mb-3 uppercase tracking-[0.06em]">
               Orari i punës
             </h3>
             <p className="text-[13px] text-white/70 leading-[1.6]">

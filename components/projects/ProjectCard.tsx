@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="relative bg-[#080d15]/60 px-6 py-7 lg:px-7 lg:py-8">
           {/* Category & Location */}
           <div className="flex items-center justify-between gap-3 mb-3">
-            <span className="text-[11px] font-black tracking-[0.08em] text-lime uppercase">
+            <span className="text-[11px] font-semibold tracking-[0.08em] text-lime uppercase">
               {project.category}
             </span>
             <span className="text-[11px] text-white/50 truncate">
@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           {/* Title */}
-          <h3 className="text-[16px] lg:text-[17px] font-black leading-[1.2] text-white mb-2 group-hover:text-lime transition-colors duration-300">
+          <h3 className="text-[16px] lg:text-[17px] font-semibold leading-[1.2] text-white mb-2 group-hover:text-lime transition-colors duration-300">
             {project.title}
           </h3>
 
@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <div className="mb-5 space-y-1">
               {project.results.slice(0, 2).map((result, idx) => (
                 <div key={idx} className="flex items-start gap-2">
-                  <span className="text-lime text-[10px] font-black mt-1">
+                  <span className="text-lime text-[10px] font-semibold mt-1">
                     ✓
                   </span>
                   <span className="text-[12px] text-white/60">{result}</span>
@@ -69,7 +69,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
 
           {/* CTA */}
-          <div className="flex items-center gap-2 text-lime font-black text-[12px] tracking-[0.04em] group-hover:gap-3 transition-all duration-300">
+          <div className="flex items-center gap-2 text-lime font-semibold text-[12px] tracking-[0.04em] group-hover:gap-3 transition-all duration-300">
             SHIKO PROJEKTIN <ArrowRight className="h-4 w-4" />
           </div>
         </div>

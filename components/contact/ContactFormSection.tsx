@@ -56,7 +56,7 @@ export default function ContactFormSection() {
             onSubmit={handleSubmit}
             className="border border-white/12 bg-[#080d15]/60 p-8 lg:p-10"
           >
-            <h2 className="text-[24px] sm:text-[28px] font-black text-white mb-8">
+            <h2 className="text-[24px] sm:text-[28px] font-light text-white mb-8">
               Dërgo mesazhin tuaj
             </h2>
 
@@ -72,7 +72,7 @@ export default function ContactFormSection() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-[12px] font-black text-white mb-2 uppercase tracking-[0.06em]"
+                  className="block text-[12px] font-semibold text-white mb-2 uppercase tracking-[0.06em]"
                 >
                   Emri <span className="text-lime">*</span>
                 </label>
@@ -92,7 +92,7 @@ export default function ContactFormSection() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-[12px] font-black text-white mb-2 uppercase tracking-[0.06em]"
+                  className="block text-[12px] font-semibold text-white mb-2 uppercase tracking-[0.06em]"
                 >
                   Email <span className="text-lime">*</span>
                 </label>
@@ -112,7 +112,7 @@ export default function ContactFormSection() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-[12px] font-black text-white mb-2 uppercase tracking-[0.06em]"
+                  className="block text-[12px] font-semibold text-white mb-2 uppercase tracking-[0.06em]"
                 >
                   Telefoni
                 </label>
@@ -131,7 +131,7 @@ export default function ContactFormSection() {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-[12px] font-black text-white mb-2 uppercase tracking-[0.06em]"
+                  className="block text-[12px] font-semibold text-white mb-2 uppercase tracking-[0.06em]"
                 >
                   Subjekti <span className="text-lime">*</span>
                 </label>
@@ -162,7 +162,7 @@ export default function ContactFormSection() {
             <div className="mb-8">
               <label
                 htmlFor="message"
-                className="block text-[12px] font-black text-white mb-2 uppercase tracking-[0.06em]"
+                className="block text-[12px] font-semibold text-white mb-2 uppercase tracking-[0.06em]"
               >
                 Mesazhi <span className="text-lime">*</span>
               </label>
@@ -181,7 +181,7 @@ export default function ContactFormSection() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 bg-lime px-6 py-4 text-[12px] font-black text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
+              className="w-full inline-flex items-center justify-center gap-2 bg-lime px-6 py-4 text-[12px] font-semibold text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
             >
               DËRGO MESAZHIN <ArrowRight className="h-4 w-4" />
             </button>

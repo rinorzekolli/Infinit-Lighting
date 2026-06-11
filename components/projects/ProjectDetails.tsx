@@ -41,7 +41,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               {/* Category & Location */}
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <div className="flex items-center gap-2">
-                  <span className="text-[12px] font-black tracking-[0.08em] text-lime uppercase">
+                  <span className="text-[12px] font-semibold tracking-[0.08em] text-lime uppercase">
                     {project.category}
                   </span>
                   <div className="h-px w-8 bg-lime/50" />
@@ -52,7 +52,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               </div>
 
               {/* Title */}
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[44px] font-black leading-[1.15] text-white mb-6">
+              <h1 className="text-[32px] sm:text-[40px] lg:text-[44px] font-light leading-[1.15] text-white mb-6">
                 {project.title}
               </h1>
 
@@ -63,7 +63,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
               {/* Solution Section */}
               <div className="mb-10 border-l-2 border-lime pl-6">
-                <h2 className="text-[14px] font-black text-lime uppercase tracking-[0.06em] mb-3">
+                <h2 className="text-[14px] font-semibold text-lime uppercase tracking-[0.06em] mb-3">
                   Zgjidhja e aplikuar
                 </h2>
                 <p className="text-[14px] text-white/70 leading-[1.7]">
@@ -74,7 +74,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               {/* Results Section */}
               {project.results.length > 0 && (
                 <div className="mb-10">
-                  <h2 className="text-[16px] font-black text-white mb-5">
+                  <h2 className="text-[16px] font-semibold text-white mb-5">
                     Rezultatet e projektit:
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -83,7 +83,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                         key={idx}
                         className="border border-white/15 bg-white/5 px-4 py-3 flex items-start gap-3"
                       >
-                        <span className="text-lime font-black text-[12px] mt-0.5 shrink-0">
+                        <span className="text-lime font-semibold text-[12px] mt-0.5 shrink-0">
                           ✓
                         </span>
                         <span className="text-[13px] text-white/70">
@@ -98,7 +98,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               {/* Gallery */}
               {project.gallery && project.gallery.length > 1 && (
                 <div className="mb-10">
-                  <h2 className="text-[16px] font-black text-white mb-5">
+                  <h2 className="text-[16px] font-semibold text-white mb-5">
                     Galeria e projektit:
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -130,14 +130,14 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             className="lg:col-span-1"
           >
             <div className="border border-white/12 bg-[#080d15]/60 p-6 lg:p-7 sticky top-32">
-              <h2 className="text-[14px] font-black text-white mb-6 uppercase tracking-[0.06em]">
+              <h2 className="text-[14px] font-semibold text-white mb-6 uppercase tracking-[0.06em]">
                 Informacione
               </h2>
 
               <div className="space-y-6">
                 {/* Kategoria */}
                 <div>
-                  <p className="text-[11px] font-black text-lime uppercase tracking-[0.06em] mb-2">
+                  <p className="text-[11px] font-semibold text-lime uppercase tracking-[0.06em] mb-2">
                     Tip projekti
                   </p>
                   <p className="text-[14px] text-white/80">
@@ -147,7 +147,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
                 {/* Lokacioni */}
                 <div>
-                  <p className="text-[11px] font-black text-lime uppercase tracking-[0.06em] mb-2">
+                  <p className="text-[11px] font-semibold text-lime uppercase tracking-[0.06em] mb-2">
                     Lokacioni
                   </p>
                   <p className="text-[14px] text-white/80">
@@ -158,7 +158,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 {/* Produktet e përdorura */}
                 {project.usedProducts && project.usedProducts.length > 0 && (
                   <div>
-                    <p className="text-[11px] font-black text-lime uppercase tracking-[0.06em] mb-2">
+                    <p className="text-[11px] font-semibold text-lime uppercase tracking-[0.06em] mb-2">
                       Produktet e përdorura
                     </p>
                     <div className="space-y-2">
@@ -179,13 +179,13 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               <div className="mt-8 space-y-3">
                 <a
                   href="/kontakti"
-                  className="w-full inline-flex items-center justify-center bg-lime px-6 py-4 text-[12px] font-black text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark gap-2"
+                  className="w-full inline-flex items-center justify-center bg-lime px-6 py-4 text-[12px] font-semibold text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark gap-2"
                 >
                   KËRKESO PROJEKT <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
                   href="/produktet"
-                  className="w-full inline-flex items-center justify-center border border-lime/70 px-6 py-4 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
+                  className="w-full inline-flex items-center justify-center border border-lime/70 px-6 py-4 text-[12px] font-semibold text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
                 >
                   SHFLETONI PRODUKTET
                 </a>

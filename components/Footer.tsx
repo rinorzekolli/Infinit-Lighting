@@ -42,7 +42,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-[12px] font-black text-white uppercase tracking-[0.08em] mb-5">
+            <h3 className="text-[12px] font-semibold text-white uppercase tracking-[0.08em] mb-5">
               KONTAKTO NA
             </h3>
             <div className="space-y-3">
@@ -74,7 +74,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="text-[12px] font-black text-white uppercase tracking-[0.08em] mb-5">
+            <h3 className="text-[12px] font-semibold text-white uppercase tracking-[0.08em] mb-5">
               ABONOHU PËR NJOFTIME
             </h3>
             <p className="text-[13px] text-white/62 mb-4">

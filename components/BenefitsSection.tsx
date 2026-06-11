@@ -45,7 +45,7 @@ export default function BenefitsSection() {
             className="flex items-center justify-center gap-4 mb-10"
           >
             <div className="h-px flex-1 bg-white/16" />
-            <span className="text-[12px] font-black tracking-[0.13em] text-lime uppercase whitespace-nowrap">
+            <span className="text-[12px] font-semibold tracking-[0.13em] text-lime uppercase whitespace-nowrap">
               ZHVILLUAR PËR PERFORMANCË
             </span>
             <div className="h-px flex-1 bg-white/16" />
@@ -65,7 +65,7 @@ export default function BenefitsSection() {
                   <div className="relative flex justify-start sm:justify-center mb-5">
                     <Icon className="h-10 w-10 text-lime" strokeWidth={1.15} />
                   </div>
-                  <h3 className="relative text-[12px] font-black text-white tracking-[0.04em] mb-3">
+                  <h3 className="relative text-[12px] font-semibold text-white tracking-[0.04em] mb-3">
                     {benefit.title}
                   </h3>
                   <p className="relative text-[12px] text-white/60 leading-[1.75]">

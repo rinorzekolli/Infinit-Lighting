@@ -47,10 +47,10 @@ export default function StatisticsSection() {
                 {index !== 0 && (
                   <div className="absolute left-0 top-1/2 hidden h-20 w-px -translate-y-1/2 bg-white/14 lg:block" />
                 )}
-                <div className="text-[36px] sm:text-[44px] lg:text-[42px] font-black text-lime">
+                <div className="text-[36px] sm:text-[44px] lg:text-[42px] font-light text-lime">
                   {stat.value}
                 </div>
-                <p className="mt-3 text-[11px] font-black text-white tracking-[0.04em] uppercase">
+                <p className="mt-3 text-[11px] font-semibold text-white tracking-[0.04em] uppercase">
                   {stat.label}
                 </p>
                 <p className="mt-2 text-[12px] text-white/55">

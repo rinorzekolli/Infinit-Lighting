@@ -12,7 +12,7 @@ export default function AboutHeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55 }}
           >
-            <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-black leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)] mb-6">
+            <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-light leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)] mb-6">
               Rreth Infinit Lighting
             </h1>
             <p className="text-[15px] lg:text-[16px] text-white/82 leading-[1.8] drop-shadow-[0_4px_16px_rgba(0,0,0,0.65)]">
@@ -30,7 +30,7 @@ export default function AboutHeroSection() {
           >
             <div className="absolute inset-0 border border-lime/30 bg-lime/5 flex items-center justify-center">
               <div className="text-center">
-                <div className="text-[56px] font-black text-lime mb-3">
+                <div className="text-[56px] font-light text-lime mb-3">
                   +500
                 </div>
                 <p className="text-[14px] text-white/60">

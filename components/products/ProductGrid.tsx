@@ -35,7 +35,7 @@ export default function ProductGrid({
           >
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-5 py-2.5 text-[12px] font-black tracking-[0.04em] transition-all duration-300 border ${
+              className={`px-5 py-2.5 text-[12px] font-semibold tracking-[0.04em] transition-all duration-300 border ${
                 selectedCategory === null
                   ? "border-lime bg-lime text-[#07100d]"
                   : "border-white/20 bg-transparent text-white hover:border-lime/50"
@@ -47,7 +47,7 @@ export default function ProductGrid({
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-5 py-2.5 text-[12px] font-black tracking-[0.04em] transition-all duration-300 border whitespace-nowrap ${
+                className={`px-5 py-2.5 text-[12px] font-semibold tracking-[0.04em] transition-all duration-300 border whitespace-nowrap ${
                   selectedCategory === category
                     ? "border-lime bg-lime text-[#07100d]"
                     : "border-white/20 bg-transparent text-white hover:border-lime/50"

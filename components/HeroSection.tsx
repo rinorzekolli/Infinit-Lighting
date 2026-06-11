@@ -32,12 +32,12 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55 }}
             >
-              <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-black leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)]">
+              <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-light leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)]">
                 NDRIÇIMI QË
                 <br />
                 KRIJON SIGURI.
               </h1>
-              <h2 className="mt-2 text-[32px] sm:text-[43px] lg:text-[47px] font-black leading-[1.12] tracking-[-0.02em] text-lime drop-shadow-[0_0_20px_rgba(164,196,45,0.18)]">
+              <h2 className="mt-2 text-[32px] sm:text-[43px] lg:text-[47px] font-light leading-[1.12] tracking-[-0.02em] text-lime drop-shadow-[0_0_20px_rgba(164,196,45,0.18)]">
                 TEKNOLOGJIA QË
                 <br />
                 DREJTON TË ARDHMEN.
@@ -60,13 +60,13 @@ export default function HeroSection() {
             >
               <a
                 href="/produktet"
-                className="inline-flex items-center gap-2 bg-lime px-6 py-3.5 text-[12px] font-black text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
+                className="inline-flex items-center gap-2 bg-lime px-6 py-3.5 text-[12px] font-semibold text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
               >
                 ZBULO PRODUKTET <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="/projektet"
-                className="inline-flex items-center gap-2 border border-white/45 bg-black/20 px-6 py-3.5 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-white/10 hover:border-lime/60"
+                className="inline-flex items-center gap-2 border border-white/45 bg-black/20 px-6 py-3.5 text-[12px] font-semibold text-white tracking-[0.04em] transition-all duration-300 hover:bg-white/10 hover:border-lime/60"
               >
                 SHIKO PROJEKTET <ArrowRight className="h-4 w-4" />
               </a>
@@ -87,7 +87,7 @@ export default function HeroSection() {
                     <feature.icon className="h-8 w-8" strokeWidth={1.1} />
                   </div>
                   <div>
-                    <h3 className="text-[12px] font-black text-white tracking-[0.04em] drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)]">
+                    <h3 className="text-[12px] font-semibold text-white tracking-[0.04em] drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)]">
                       {feature.title}
                     </h3>
                     <p className="mt-2 text-[12px] text-white/72 leading-relaxed">

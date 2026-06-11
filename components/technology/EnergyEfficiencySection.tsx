@@ -19,13 +19,13 @@ export default function EnergyEfficiencySection() {
               transition={{ duration: 0.55 }}
             >
               <div className="flex items-center gap-3 mb-5">
-                <span className="text-[12px] font-black tracking-[0.14em] text-lime uppercase">
+                <span className="text-[12px] font-semibold tracking-[0.14em] text-lime uppercase">
                   EFIÇIENCË ENERGJETIKE
                 </span>
                 <div className="h-px w-10 bg-lime/70" />
               </div>
 
-              <h2 className="text-[28px] sm:text-[34px] lg:text-[36px] font-black leading-[1.15] text-white mb-6">
+              <h2 className="text-[28px] sm:text-[34px] lg:text-[36px] font-light leading-[1.15] text-white mb-6">
                 Kursim Energjie
                 <br />
                 deri 70%
@@ -44,7 +44,7 @@ export default function EnergyEfficiencySection() {
                   "Efikasitet maksimal me dimming inteligjent",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <span className="text-lime font-black text-[12px] mt-1">
+                    <span className="text-lime font-semibold text-[12px] mt-1">
                       ✓
                     </span>
                     <span className="text-[13px] text-white/70">{item}</span>
@@ -54,7 +54,7 @@ export default function EnergyEfficiencySection() {
 
               <a
                 href="/produktet"
-                className="inline-flex items-center gap-2 border border-lime/70 px-6 py-3 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
+                className="inline-flex items-center gap-2 border border-lime/70 px-6 py-3 text-[12px] font-semibold text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
               >
                 EKSPLORO PRODUKTET <ArrowRight className="h-4 w-4" />
               </a>
@@ -78,7 +78,7 @@ export default function EnergyEfficiencySection() {
                   key={idx}
                   className="border border-lime/30 bg-lime/5 p-6 text-center"
                 >
-                  <div className="text-[32px] sm:text-[40px] font-black text-lime mb-2">
+                  <div className="text-[32px] sm:text-[40px] font-light text-lime mb-2">
                     {stat.value}
                   </div>
                   <div className="text-[12px] text-white/60 font-medium">

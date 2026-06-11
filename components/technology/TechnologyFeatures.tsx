@@ -68,7 +68,7 @@ export default function TechnologyFeatures() {
           className="flex items-center justify-center gap-4 mb-12"
         >
           <div className="h-px flex-1 bg-white/16" />
-          <span className="text-[12px] font-black tracking-[0.13em] text-lime uppercase whitespace-nowrap">
+          <span className="text-[12px] font-semibold tracking-[0.13em] text-lime uppercase whitespace-nowrap">
             Teknologjia e avancuar
           </span>
           <div className="h-px flex-1 bg-white/16" />
@@ -89,7 +89,7 @@ export default function TechnologyFeatures() {
                 <div className="mb-5">
                   <Icon className="h-10 w-10 text-lime group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h3 className="text-[15px] font-black text-white mb-3 group-hover:text-lime transition-colors duration-300">
+                <h3 className="text-[15px] font-semibold text-white mb-3 group-hover:text-lime transition-colors duration-300">
                   {feature.title}
                 </h3>
                 <p className="text-[13px] text-white/62 leading-[1.7]">

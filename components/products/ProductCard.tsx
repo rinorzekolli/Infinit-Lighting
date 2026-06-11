@@ -24,14 +24,14 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="relative flex flex-col h-full p-6 lg:p-7">
           {/* Category Badge */}
           <div className="mb-4 flex items-center gap-2">
-            <span className="text-[11px] font-black tracking-[0.08em] text-lime uppercase">
+            <span className="text-[11px] font-semibold tracking-[0.08em] text-lime uppercase">
               {product.category}
             </span>
             <div className="h-px w-8 bg-lime/50" />
           </div>
 
           {/* Title */}
-          <h3 className="text-[16px] lg:text-[17px] font-black leading-[1.2] text-white mb-3 group-hover:text-lime transition-colors duration-300">
+          <h3 className="text-[16px] lg:text-[17px] font-semibold leading-[1.2] text-white mb-3 group-hover:text-lime transition-colors duration-300">
             {product.title}
           </h3>
 
@@ -65,7 +65,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           )}
 
           {/* Button */}
-          <div className="mt-auto flex items-center gap-2 text-lime font-black text-[12px] tracking-[0.04em] group-hover:gap-3 transition-all duration-300">
+          <div className="mt-auto flex items-center gap-2 text-lime font-semibold text-[12px] tracking-[0.04em] group-hover:gap-3 transition-all duration-300">
             SHIKO DETAJET <ArrowRight className="h-4 w-4" />
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function ProjectsHero({
           transition={{ duration: 0.55 }}
           className="text-center"
         >
-          <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-black leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)]">
+          <h1 className="text-[34px] sm:text-[44px] lg:text-[48px] font-light leading-[1.13] tracking-tight text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.65)]">
             {title}
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-[15px] lg:text-[16px] text-white/82 leading-[1.8] drop-shadow-[0_4px_16px_rgba(0,0,0,0.65)]">

@@ -16,13 +16,13 @@ export default function MissionVisionSection() {
             className="border border-white/12 bg-[#080d15]/60 p-8 lg:p-10"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-[12px] font-black tracking-[0.14em] text-lime uppercase">
+              <span className="text-[12px] font-semibold tracking-[0.14em] text-lime uppercase">
                 MISIONI
               </span>
               <div className="h-px flex-1 bg-lime/50" />
             </div>
 
-            <h2 className="text-[24px] sm:text-[28px] font-black text-white mb-4">
+            <h2 className="text-[24px] sm:text-[28px] font-light text-white mb-4">
               Të ofrojmë zgjidhje të sigurta, efikase dhe moderne të ndriçimit
               LED
             </h2>
@@ -44,13 +44,13 @@ export default function MissionVisionSection() {
             className="border border-white/12 bg-[#080d15]/60 p-8 lg:p-10"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-[12px] font-black tracking-[0.14em] text-lime uppercase">
+              <span className="text-[12px] font-semibold tracking-[0.14em] text-lime uppercase">
                 VIZIONI
               </span>
               <div className="h-px flex-1 bg-lime/50" />
             </div>
 
-            <h2 className="text-[24px] sm:text-[28px] font-black text-white mb-4">
+            <h2 className="text-[24px] sm:text-[28px] font-light text-white mb-4">
               Të jemi partner i besueshëm në zhvillimin e infrastrukturës
               moderne të ndriçimit
             </h2>

@@ -68,12 +68,12 @@ export default function SmartSystemsSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-12 bg-lime/50" />
-            <span className="text-[12px] font-black tracking-[0.14em] text-lime uppercase">
+            <span className="text-[12px] font-semibold tracking-[0.14em] text-lime uppercase">
               SISTEME SMART
             </span>
             <div className="h-px w-12 bg-lime/50" />
           </div>
-          <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-black leading-[1.15] text-white">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-light leading-[1.15] text-white\">
             Kontroll Inteligjent
             <br />
             të Ndriçimit
@@ -96,7 +96,7 @@ export default function SmartSystemsSection() {
                 <div className="mb-5">
                   <Icon className="h-10 w-10 text-lime group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h3 className="text-[15px] font-black text-white mb-2 group-hover:text-lime transition-colors duration-300">
+                <h3 className="text-[15px] font-semibold text-white mb-2 group-hover:text-lime transition-colors duration-300">
                   {feature.title}
                 </h3>
                 <p className="text-[13px] text-white/62 leading-[1.7]">

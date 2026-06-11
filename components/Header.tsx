@@ -59,7 +59,7 @@ export default function Header() {
           </nav>
           <Link
             href="/kontakti"
-            className="hidden lg:inline-flex items-center gap-2 bg-lime px-6 py-3 text-[11px] font-black text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
+            className="hidden lg:inline-flex items-center gap-2 bg-lime px-6 py-3 text-[11px] font-semibold text-[#07100d] tracking-[0.04em] transition-all duration-300 hover:bg-lime-dark"
           >
             KËRKO OFERTË <ArrowRight className="h-3.5 w-3.5" />
           </Link>
@@ -98,7 +98,7 @@ export default function Header() {
               <Link
                 href="/kontakti"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 inline-flex items-center justify-center gap-2 bg-lime px-5 py-3 text-xs font-black text-[#07100d]"
+                className="mt-2 inline-flex items-center justify-center gap-2 bg-lime px-5 py-3 text-xs font-semibold text-[#07100d]"
               >
                 KËRKO OFERTË <ArrowRight className="h-3.5 w-3.5" />
               </Link>
