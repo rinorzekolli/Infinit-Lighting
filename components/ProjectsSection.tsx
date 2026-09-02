@@ -5,24 +5,28 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 const projects = [
+  //Road 1
   {
     id: 1,
     title: "AUTOSTRADA PRISHTINË – FERIZAJ",
     description: "Ndriçim LED i autostradës",
     image: "/images/road-01.png",
   },
+  //Road 2
   {
     id: 2,
     title: 'RUGA "AGIM RAMADANI", PRISHTINË',
     description: "Ndriçim urban LED",
     image: "/images/road-02.png",
   },
+  //Road 3
   {
     id: 3,
     title: 'BOULEVARDI "BILL KLINTON", PRISHTINË',
     description: "Ndriçim urban inteligjent",
     image: "/images/road-03.png",
   },
+  //Road 4
   {
     id: 4,
     title: "RUGA PRIZREN – SUHAREKË",
