@@ -42,7 +42,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.45 }}
           className="flex items-center gap-3 mb-9"
         >
-          <h2 className="text-[15px] font-black tracking-[0.06em] text-lime uppercase">
+          <h2 className="text-[15px] font-semibold tracking-[0.06em] text-lime uppercase">
             PROJEKTET TONA
           </h2>
           <div className="h-px w-12 bg-lime/55" />
@@ -68,7 +68,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-linear-to-t from-[#050912]/70 via-transparent to-transparent opacity-75" />
               </div>
               <div className="border-x border-b border-white/8 bg-black/34 px-4 py-4 backdrop-blur-[1px]">
-                <h3 className="text-[11px] font-black text-white leading-snug tracking-[0.035em]">
+                <h3 className="text-[11px] font-semibold text-white leading-snug tracking-[0.035em]">
                   {project.title}
                 </h3>
                 <p className="mt-2 text-[12px] text-white/58">
@@ -87,7 +87,7 @@ export default function ProjectsSection() {
         >
           <a
             href="/projektet"
-            className="inline-flex items-center gap-2 border border-lime/65 bg-black/22 px-7 py-3 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
+            className="inline-flex items-center gap-2 border border-lime/65 bg-black/22 px-7 py-3 text-[12px] font-semibold text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
           >
             SHIKO TË GJITHA PROJEKTET <ArrowRight className="h-4 w-4" />
           </a>

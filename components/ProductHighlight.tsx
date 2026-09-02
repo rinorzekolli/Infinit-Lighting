@@ -19,12 +19,12 @@ export default function ProductHighlight() {
               className="lg:col-span-5"
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-[12px] font-black tracking-[0.14em] text-lime uppercase">
+                <span className="text-[12px] font-semibold tracking-[0.14em] text-lime uppercase">
                   PRODUKTE PREMIUM
                 </span>
                 <div className="h-px w-11 bg-lime/70" />
               </div>
-              <h2 className="text-[28px] sm:text-[34px] lg:text-[33px] font-black leading-[1.12] text-white">
+              <h2 className="text-[28px] sm:text-[34px] lg:text-[33px] font-light leading-[1.12] text-white">
                 Ndriçues LED të
                 <br />
                 gjeneratës së fundit
@@ -34,7 +34,7 @@ export default function ProductHighlight() {
               </p>
               <a
                 href="/produktet"
-                className="mt-7 inline-flex items-center gap-2 border border-lime/70 px-6 py-3 text-[12px] font-black text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
+                className="mt-7 inline-flex items-center gap-2 border border-lime/70 px-6 py-3 text-[12px] font-semibold text-white tracking-[0.04em] transition-all duration-300 hover:bg-lime hover:text-[#07100d]"
               >
                 MËSO MË SHUMË <ArrowRight className="h-4 w-4" />
               </a>
@@ -50,8 +50,8 @@ export default function ProductHighlight() {
                 src="/images/led-street-light-product.png"
                 alt="LED Street Light Product"
                 fill
-                className="object-contain drop-shadow-[0_24px_36px_rgba(0,0,0,0.62)]"
-                sizes="(max-width: 1024px) 100vw, 58vw"
+                className="object-contain object-[75%_50%] scale-180 drop-shadow-[0_30px_60px_rgba(255,255,255,4)]"
+                sizes="(max-width: 1024px) 100vw, 108vw"
               />
             </motion.div>
           </div>
