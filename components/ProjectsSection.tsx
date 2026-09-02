@@ -33,6 +33,13 @@ const projects = [
     description: "Ndriçim rrugor LED",
     image: "/images/road-04.png",
   },
+  //Future
+  {
+    id: 5,
+    title: "PROJEKTI I ARDHSHËM",
+    description: "Coming soon — projekt në zhvillim",
+    image: "/images/coming-soon.png",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -61,7 +68,7 @@ export default function ProjectsSection() {
               transition={{ duration: 0.45, delay: index * 0.08 }}
               className="group cursor-pointer"
             >
-              <div className="relative h-39.5 overflow-hidden border border-white/8 bg-black/35 shadow-[0_18px_34px_rgba(0,0,0,0.34)]">
+              <div className="relative h-48 overflow-hidden border border-white/8 bg-black/35 shadow-[0_18px_34px_rgba(0,0,0,0.34)]">
                 <Image
                   src={project.image}
                   alt={project.title}
